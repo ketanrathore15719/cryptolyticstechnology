@@ -1211,7 +1211,7 @@ section {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .php-email-form .thankyou_message {
   display: none;
   color: #fff;
   background: #18d26e;
