@@ -460,8 +460,8 @@
                         </div>
                     </div>
                     <div class="col-lg-8 mt-5 mt-lg-0">
-                        <form action="https://script.google.com/macros/s/AKfycbwhdFRBk6woU5yahL1R9EsmtDPtx5oZ_wHibWdMhf6RUoJwu4JY9TfSM9JZAQB0_4qD/exec" method="post" role="form" class="php-email-form" data-email="cryptolyticstechnology@gmail.com" id="myForm">
-                        <div class="form-elements">
+                        <form action="https://script.google.com/macros/s/AKfycbwhdFRBk6woU5yahL1R9EsmtDPtx5oZ_wHibWdMhf6RUoJwu4JY9TfSM9JZAQB0_4qD/exec" method="post" role="form" class="gform pure-form pure-form-stacked php-email-form" data-email="cryptolyticstechnology@gmail.com" id="myForm">
+                        <!-- <div class="form-elements"> -->
                             <div class="form-row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
@@ -480,13 +480,15 @@
                                 <textarea class="form-control" id="message" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                 <div class="validate"></div>
                             </div>
-                        </div>
+                            <div class="text-center"><button type="submit" onclick="success();">Send Message</button></div>
+                        <!-- </div> -->
+                        <br>
                             <div class="mb-3">
                                 <!-- <div class="loading">Loading</div>
                                 <div class="error-message"></div> -->
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="thankyou_message" style="display: none;">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit" onclick="success();">Send Message</button></div>
+                            
                         </form>
                     </div>
                 </div>
@@ -528,10 +530,10 @@
                     </div>
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Subscribe</h4>
-                        <form action="" method="post">
+                        <form action="https://script.google.com/macros/s/AKfycbwhdFRBk6woU5yahL1R9EsmtDPtx5oZ_wHibWdMhf6RUoJwu4JY9TfSM9JZAQB0_4qD/exec" method="post" role="form" class="gform pure-form pure-form-stacked php-email-form" data-email="cryptolyticstechnology@gmail.com" id="myForm">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
-                    </div>
+                        <div class="thankyou_message" style="display: none;">Thank you!</div>
                 </div>
             </div>
         </div>
@@ -557,12 +559,6 @@
     <script src="public/assets/vendor/aos/aos.js"></script>
     <!-- Template Main JS File -->
     <script src="public/assets/js/main.js"></script>
-    <script src="public/assets/js/form-submission-handler.js"></script>
-    <script type="text/javascript">
-        function success() {
-            // $('.sent-message').show();
-            //document.getElementById("myForm").reset();
-        }
-    </script>
+    <script type="text/javascript" src="public/assets/js/form-submission-handler.js"></script>
 </body>
 </html>
